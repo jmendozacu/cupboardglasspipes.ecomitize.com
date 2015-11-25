@@ -1,0 +1,20 @@
+<div id="popup_layout" style="display: none;"></div>
+<div id="popup_box" style="display: none;">
+    <div id="popup_header">
+        <span id="popup_title"></span>
+        <img id="close_btn" onclick="Popup.hideWindow();return false;" src="<?php echo $this->getSkinUrl('promotional/images/close.gif');?>">
+    </div>
+
+    <div id="popup_html">
+    </div>
+</div>
+
+<script type="text/javascript">
+    document.observe('dom:loaded', function () {
+        var popupUrl = '<?php echo $this->getPopupAjaxUrl();?>';
+        if(window.location.href.match('https://') && !popupUrl.match('https://')){
+            popupUrl = popupUrl.replace('http://','https://')
+        }
+        Popup.init(popupUrl+'rand/'+Math.round(Math.random()*1000000));
+    });
+</script>

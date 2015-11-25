@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category	Massmediums
+ * @package		Massmediums_Cupboard
+ * @author		Massmediums
+ * @copyright	Copyright 2012 Massmediums
+ */
+ -->
+<config>
+    <modules>
+        <Massmediums_Cupboard>
+            <active>true</active>
+            <codePool>local</codePool>
+			<depends>
+				<Massmediums_Massmediums/>
+				<Massmediums_Brands/>
+				<Massmediums_CloudZoom/>
+				<Massmediums_UltraMegamenu/>
+				<Massmediums_UltraSlideshow/>
+			</depends>
+        </Massmediums_Cupboard>
+    </modules>
+</config> 

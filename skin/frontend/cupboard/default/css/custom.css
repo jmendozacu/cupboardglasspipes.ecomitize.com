@@ -1,0 +1,207 @@
+/**
+ * This file is a container for custom CSS. You can use it to override the default styles of the theme.
+ *
+ * 1. Copy the file "SAMPLE.custom.css" and rename it to "custom.css".
+ *    Otherwise this file will not be loded by Magento.
+ * 2. Enable it in the admin panel.
+ * 3. Uncomment slected sample styles or add your own CSS to override the default styles of the theme.
+ *
+ * Please refer to the user guide for more details.
+ *
+ */
+
+
+
+/* Layout
+-------------------------------------------------------------- */
+
+#homelink-icon{margin-left:0!important}
+.main{padding-top: 0!important}
+.main{padding-bottom: 0px!important}
+.footer-container{border-top:6px solid #fff}
+.feature.indent{line-height:36px}
+.page-banners.home .banner{margin-bottom:1%}
+.footer-top .links > li > a:hover{color:#DDD !important}
+.social-links span.icon{background-color:#416115}
+.social-links span.icon:hover{background-color:#444444}
+.footer-bottom{padding: 10px 0}
+.footer-copyright,.block_footer_payment{margin:0}
+
+
+
+
+
+
+/* Font for Wide Menu */
+#nav li ul a span {
+    font-family: Arial, sans-serif;
+}
+
+/* Target Classic Menu Dropdown for Brands
+#nav li.nav-6 ul {
+	width:52em;
+}
+*/
+
+
+
+
+/* Slideshow
+-------------------------------------------------------------- */
+
+.slideshow-banners .banner:last-child{margin-bottom: 0px}
+
+
+
+/* Products
+-------------------------------------------------------------- */
+
+
+/* Product labels
+-------------------------------------------------------------- */
+
+/*
+.sticker.new {
+	background-color:#555;
+	color:#fff;
+}
+.sticker.sale {
+	background-color:orange;
+	color:#fff;
+}
+*/
+
+/* Stock indicator on product page (configurable products):
+icon background color
+-------------------------------------------------------------- */
+/*
+a.availability-only span.icon { background-color:orange; }
+*/
+
+
+/* Miscellaneous
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+/* boldlink class added by Cory */
+
+
+					
+a.boldlink:link{			color: #1FA900;		
+					}
+
+a.boldlink:visited{			color: #0E4F00;
+					}
+					
+a.boldlink:hover{			color: #2BEA00;
+					}
+
+a.boldlink:active{			color: #2BEA00;
+					}				
+
+/* glo and alt classes added by Cory */
+					
+table.glo, td.glo {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-width: 2px;
+    padding: 5px;
+}
+
+th.glo {
+  border: 1px solid black;
+    border-collapse: collapse;
+    border-width: 2px;
+     background-color: #5c8c1a;
+    color: #fff;
+font-size: 18px;
+padding: 10px;
+align: center;
+}
+
+tr.alt {
+    background-color: #E7FFE4;
+}
+
+
+
+
+
+
+
+/* Drop-down caret */
+/*
+.caret {
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+*/
+
+
+
+/* Fluid Videos
+----------------------------------------------------------------------------------------------------*/
+.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 0px; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+
+
+
+/* Breakpoints
+----------------------------------------------------------------------------------------------------*/
+
+/* All except large Screens */
+@media (max-width: 1220px) {
+
+	.slideshow-banners .banner {margin-bottom:10px}
+
+}
+
+/* Only Desktops and Large Screens */
+@media (min-width: 1024px) {
+
+    .slideshow-banners .banner {margin-bottom: 10px}
+
+}
+
+/* Only Phones and Tablets (Landscape) */
+@media (max-width: 1024px) {
+
+    .level-top .caret {display: none}
+    
+}
+
+/* Only Tablets (Portrait) */
+@media (min-width: 768px) and (max-width: 959px) {
+
+	.slideshow-banners .banner {margin-bottom:8px}
+
+}
+
+/* Only Tablets (Portrait) and Phones (Landscape) */
+@media (min-width: 480px) and (max-width: 959px) {
+
+}
+
+/* Only Phones */
+@media only screen and (max-width: 767px) {
+
+    .header .logo { width:100% !important;}
+/*
+	h1{font-size:26px;line-height:26px}
+	h2{font-size:24px;line-height:24px}
+	h3{font-size:22px;line-height:22px}
+	h4{font-size:20px;line-height:20px}
+	h5{font-size:18px;line-height:18px}
+*/
+	
+}
+
+/* Only Phones (Landscape) */
+@media (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Only Phones (Portrait) */
+@media (max-width: 479px) {
+
+}

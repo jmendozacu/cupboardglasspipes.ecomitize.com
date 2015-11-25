@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category	Massmediums
+ * @package		Massmediums_Massmediums
+ * @author		Massmediums
+ * @copyright	Copyright 2013 Massmediums
+ */
+-->
+<config>
+    <modules>
+        <Massmediums_Massmediums>
+            <version>0.9.0</version>
+        </Massmediums_Massmediums>
+    </modules>
+	<!--<admin>
+		<routers>
+			<massmediums>
+				<use>admin</use>
+				<args>
+					<module>Massmediums_Massmediums</module>
+					<frontName>massmediums</frontName>
+				</args>
+			</massmediums>
+		</routers>
+	</admin>-->
+    <global>
+        <blocks>
+            <massmediums>
+                <class>Massmediums_Massmediums_Block</class>
+            </massmediums>
+        </blocks>
+        <helpers>
+            <massmediums>
+                <class>Massmediums_Massmediums_Helper</class>
+            </massmediums>
+        </helpers>
+        <models>
+            <massmediums>
+                <class>Massmediums_Massmediums_Model</class>
+            </massmediums>
+        </models>
+    </global>
+</config>

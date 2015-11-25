@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Codetildawn_Licensemanager>
+            <version>0.1.0</version>
+        </Codetildawn_Licensemanager>
+    </modules>
+
+    <global>
+        <blocks>
+            <licensemanager>
+                <class>Codetildawn_Licensemanager_Block</class>
+            </licensemanager>
+        </blocks>
+        <helpers>
+            <licensemanager>
+                <class>Codetildawn_Licensemanager_Helper</class>
+            </licensemanager>
+        </helpers>
+        <models>
+            <licensemanager>
+                <class>Codetildawn_Licensemanager_Model</class>
+				<resourceModel>licensemanager_resource</resourceModel>
+            </licensemanager>
+            <licensemanager_resource>
+                <class>Codetildawn_Licensemanager_Model_Resource</class>
+                <entities>
+                    <licensemanager>
+                        <table>licensemanager</table>
+                    </licensemanager>
+                </entities>
+            </licensemanager_resource>
+        </models>
+        <resources>
+            <licensemanager_setup>
+                <setup>
+                    <module>Codetildawn_Licensemanager</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </licensemanager_setup>
+            <licensemanager_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </licensemanager_write>
+            <licensemanager_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </licensemanager_read>
+		</resources>
+    </global>
+	
+	<adminhtml>
+		<layout>
+            <updates>
+                <licensemanager>
+                    <file>codetildawn_licensemanager.xml</file>
+                </licensemanager>
+            </updates>
+        </layout>	
+	</adminhtml>
+	
+</config>

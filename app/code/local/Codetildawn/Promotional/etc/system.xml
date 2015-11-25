@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+		<licensemanager>
+			<groups>
+				<licenses>
+					<fields>
+						<promotional_key translate="label" module="promotional">
+                            <label>Promotional API Key</label>
+                            <frontend_type>text</frontend_type>
+							<backend_model>promotional/system_config_backend_promotionalkey</backend_model>
+							<frontend_model>promotional/adminhtml_system_config_form_field_promotionalkey</frontend_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Enter Your Promotional Extension License Key Here</comment>
+						</promotional_key>
+					</fields>
+				</licenses>
+			</groups>
+		</licensemanager>
+        <promotional translate="label" module="promotional">
+            <label>Promotional Popup</label>
+            <tab>codetildawn</tab>
+            <frontend_type>text</frontend_type>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General Settings</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<comment><![CDATA[Extension License can be managed from <strong style="color:#FF0000;">"License Manager >> License Certificates"</strong>]]></comment>
+                    <fields>
+                        <status>
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </status>
+                        <auto_hide translate="label">
+                            <label>Auto hide</label>
+                            <comment>seconds</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </auto_hide>
+                        <default_position translate="label">
+                            <label>Default Popup position</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>promotional/source_position</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </default_position>
+                        <cookies_lifetime translate="label">
+                            <label>Cookies lifetime</label>
+                            <comment>seconds</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <can_be_empty>1</can_be_empty>
+                        </cookies_lifetime>
+                    </fields>
+                </general>
+            </groups>
+        </promotional>
+    </sections>
+</config>

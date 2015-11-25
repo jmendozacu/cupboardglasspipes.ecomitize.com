@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+		<codetildawn translate="label" module="licensemanager">
+			<label>Codetildawn Modules</label>
+			<sort_order>100</sort_order>
+		</codetildawn>
+    </tabs>
+    <sections>
+		<storelogo translate="label" module="licensemanager">
+			<label><![CDATA[<div style="position: absolute; margin-left:20px;"><a title="CodetilDawn Store" href="http://codetildawn.com/shop/" target="_blank"><img id="storelogo" src="" alt="CodetilDawn Store" title="CodetilDawn Store" height="16" width="170" border="0" /></a></div>&nbsp;<script>$('storelogo').src = SKIN_URL + "codetildawn/images/store.png";</script>]]></label>
+			<tab>codetildawn</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+		</storelogo>
+		
+        <licensemanager translate="label" module="licensemanager">fam_group
+		
+			<label><![CDATA[<div style="position: absolute;"><img border="0" alt="" src="" id="codetildawn_license">&nbsp;&nbsp;License Manager</div>&nbsp;<script>$('codetildawn_license').src = SKIN_URL + "images/fam_group.gif";</script>]]></label>
+            <tab>codetildawn</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>500</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <licenses translate="label comment">
+                    <label>License Certificates</label>
+                    <comment>All Codetildawn Licenses can be managed from here.</comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<title translate="label">
+							<label><![CDATA[<strong>Codetildawn License Manager</strong><br><br>]]></label>
+							<frontend_type>label</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</title>
+                    </fields>
+                </licenses>
+            </groups>
+        </licensemanager>
+    </sections>
+</config>

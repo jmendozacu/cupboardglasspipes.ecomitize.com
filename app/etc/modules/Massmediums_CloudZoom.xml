@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category	Massmediums
+ * @package		Massmediums_CloudZoom
+ * @author		Massmediums
+ * @copyright	Copyright 2012 Massmediums
+ */
+ -->
+<config>
+    <modules>
+        <Massmediums_CloudZoom>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Massmediums_CloudZoom>
+    </modules>
+</config>

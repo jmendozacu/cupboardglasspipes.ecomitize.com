@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category	Massmediums
+ * @package		Massmediums_Brands
+ * @author		Massmediums
+ * @copyright	Copyright 2012 Massmediums
+ */
+ -->
+<config>
+    <modules>
+        <Massmediums_Brands>
+            <active>true</active>
+            <codePool>local</codePool>
+			<depends>
+				<Massmediums_Massmediums />
+			</depends>
+        </Massmediums_Brands>
+    </modules>
+</config> 

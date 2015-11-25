@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="1.0">
+    <promotional_admin_adminhtml_promotional_index>
+        <reference name="content">
+            <block type="promotional/adminhtml_promotional" name="promotional"/>
+        </reference>
+    </promotional_admin_adminhtml_promotional_index>
+    <promotional_admin_adminhtml_promotional_edit>
+        <update handle="editor"/>
+    </promotional_admin_adminhtml_promotional_edit>
+</layout>

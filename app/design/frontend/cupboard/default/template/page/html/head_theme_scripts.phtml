@@ -1,0 +1,20 @@
+<?php
+	$theme = Mage::helper('cupboard');
+	$storeCode = Mage::app()->getStore()->getCode();
+	
+	$isResponsive = $theme->getCfgLayout('responsive/responsive', $storeCode);
+	$maxBreak = Mage::helper('massmediums/responsive')->mapWidthToBreakpoint($theme->getMaxWidth($storeCode), $storeCode);
+	
+//	Mage::register('massmediumsTheme', true);
+//	Mage::register('massmediumsTheme_responsive', $isResponsive);
+//	Mage::register('massmediumsTheme_maxBreak', $maxBreak);
+?>
+<script type="text/javascript">
+//<![CDATA[
+
+	var massmediumsTheme = {};
+	massmediumsTheme.responsive = <?php echo ($isResponsive ? 'true' : 'false'); ?>;
+	massmediumsTheme.maxBreak = <?php echo $maxBreak; ?>;
+
+//]]>
+</script>

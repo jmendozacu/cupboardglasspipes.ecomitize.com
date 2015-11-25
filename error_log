@@ -1,0 +1,2 @@
+[15-Sep-2015 14:07:16 UTC] PHP Fatal error:  Call to a member function setErrorMessage() on a non-object in /home/cupboar2/public_html/app/code/core/Mage/Adminhtml/controllers/System/BackupController.php on line 140
+[15-Sep-2015 15:09:27 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/cupboar2/public_html/app/code/core/Mage/Backup/Model/Backup.php on line 346

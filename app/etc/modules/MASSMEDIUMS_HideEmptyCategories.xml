@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<MASSMEDIUMS_HideEmptyCategories>
+			<active>true</active>
+			<codePool>community</codePool>
+		</MASSMEDIUMS_HideEmptyCategories>
+	</modules>
+</config>
