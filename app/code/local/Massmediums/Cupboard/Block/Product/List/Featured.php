@@ -125,6 +125,7 @@ class Massmediums_Cupboard_Block_Product_List_Featured extends Mage_Catalog_Bloc
 				$collection->getSelect()->order('rand()');
 			}
 			$collection->addStoreFilter();
+			$collection->getSelect()->order('cat_index_position','ASC');
 			$productCount = $this->getProductCount() ? $this->getProductCount() : 8;
 			$collection->setPage(1, $productCount)
 				->load();
